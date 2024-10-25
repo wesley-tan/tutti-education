@@ -1,12 +1,9 @@
 "use client"
 
 import React, { useEffect, useState } from 'react';
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import dynamic from 'next/dynamic';
 
 const TeamPage = () => {
   type Tutor = {
@@ -16,11 +13,6 @@ const TeamPage = () => {
   };
 
   const [tutors, setTutors] = useState<Tutor[]>([]);
-  const [isClient, setIsClient] = useState(false); // Track if we are on the client
-
-  useEffect(() => {
-    setIsClient(true); // Set to true when the component mounts
-  }, []);
 
   useEffect(() => {
     const fetchTutors = async () => {

@@ -3,7 +3,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from 'next/link'
 import Header from '@/app/components/Header'
 import Footer from '@/app/components/Footer'
 
@@ -22,7 +21,7 @@ const CareerPage = () => {
         <section className="mb-16 text-center">
           <h1 className="text-4xl font-bold mb-4">Join Our Team at Tutti Education</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We're on a mission to revolutionize IB education. Join us in shaping the future of learning and empowering students worldwide.
+            We&apos;re on a mission to revolutionize IB education. Join us in shaping the future of learning and empowering students worldwide.
           </p>
         </section>
 
@@ -70,9 +69,9 @@ const CareerPage = () => {
         </section>
 
         <section className="text-center bg-purple-50 py-12 px-4 rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Don't see a perfect fit?</h2>
+          <h2 className="text-3xl font-semibold mb-4">Don&apos;t see a perfect fit?</h2>
           <p className="text-xl text-gray-600 mb-6 max-w-2xl mx-auto">
-            We're always looking for talented individuals to join our team. Send us your resume, and we'll keep you in mind for future opportunities.
+            We&apos;re always looking for talented individuals to join our team. Send us your resume, and we&apos;ll keep you in mind for future opportunities.
           </p>
           <Button size="lg">Submit Your Resume</Button>
         </section>

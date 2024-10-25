@@ -16,7 +16,7 @@ const ContactPage = () => {
         <section className="mb-16 text-center">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
           <p className="text-xl text-gray-600">
-            We'd love to hear from you! Get in touch with Tutti Education.
+            We would love to hear from you! Get in touch with Tutti Education.
           </p>
         </section>
 
@@ -26,7 +26,7 @@ const ContactPage = () => {
               <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
               <p className="text-gray-600 mb-6">
                 Whether you have questions about our services, want to explore collaboration opportunities, 
-                or simply want to say hello, we're here to listen.
+                or simply want to say hello, we are here to listen.
               </p>
               <Button size="lg" asChild>
                 <Link href="mailto:officialtuttieducation@gmail.com">Send us an Email</Link>
@@ -75,9 +75,9 @@ const ContactPage = () => {
         </section>
 
         <section className="text-center">
-          <h2 className="text-3xl font-semibold mb-8">We're Here to Help</h2>
+          <h2 className="text-3xl font-semibold mb-8">We&apos;re Here to Help</h2>
           <p className="text-gray-600 mb-6">
-            Don't hesitate to reach out. We're excited to connect with you and discuss how 
+            Don&apos;t hesitate to reach out. We&apos;re excited to connect with you and discuss how 
             Tutti Education can help revolutionize your learning experience.
           </p>
           <Button variant="outline" size="lg" asChild>

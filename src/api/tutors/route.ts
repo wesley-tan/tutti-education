@@ -1,4 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
