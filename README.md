@@ -12,4 +12,4 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the application in action.
 
-You can find the website [here](tutti-education.vercel.app)
+You can find the website [here](http://tutti-education.vercel.app)
