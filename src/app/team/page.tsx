@@ -18,24 +18,11 @@ const TeamPage = () => {
     const fetchTutors = async () => {
       try {
         const response = await fetch('/api/tutors');
-        console.log('Response Status:', response.status);
-        console.log('Response Headers:', response.headers);
-        
-        const text = await response.text(); // Get the response as text
-        console.log('Response:', text); // Log the raw response
-
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-
-        const data = JSON.parse(text); // Parse it as JSON
-        console.log('Fetched tutors:', data);
-        
-        if (Array.isArray(data)) {
-          setTutors(data);
-        } else {
-          console.error('Fetched data is not an array:', data);
-        }
+        const data = await response.json();
+        setTutors(data);
       } catch (error) {
         console.error('Error fetching tutors:', error);
       }

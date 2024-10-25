@@ -5,8 +5,13 @@ dotenv.config();
 import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.error('Missing Supabase environment variables. Please check your .env file.');
+  throw new Error('Supabase environment variables are not set.');
+}
 
 console.log('Supabase URL:', supabaseUrl);
 console.log('Supabase Anon Key:', supabaseAnonKey);
@@ -18,9 +23,11 @@ export async function GET() {
   try {
     const { data: tutors, error } = await supabase
       .from('tutors')
-      .select('*');  // Changed from select(*) to select('*')
+      .select('*'); 
 
+    console.log('Fetched tutors:', tutors); // Log the fetched tutors
     if (error) {
+      console.error('Supabase error:', error); // Log the error if it exists
       throw error;
     }
 
