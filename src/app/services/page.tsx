@@ -21,7 +21,7 @@ const ServicesPage = () => {
         </section>
 
         <section className="mb-16">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <div>
               <h2 className="text-3xl font-semibold mb-4">Why Choose Our Services?</h2>
               <p className="text-gray-600 mb-6">
@@ -40,7 +40,7 @@ const ServicesPage = () => {
 
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-8 text-center">Our Offerings</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
             {[
               { title: 'Online IB Tutoring', description: 'Master IB from anywhere with our tailored online sessions.' },
               { title: 'In-Person IB Tutoring', description: 'Get premium, in-person tutoring with localized insights.' },

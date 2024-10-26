@@ -48,7 +48,7 @@ export default function TuttiEducationLanding() {
 
         <section id="services" className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
@@ -87,7 +87,7 @@ export default function TuttiEducationLanding() {
 
         <section id="benefits" className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Why Choose Tutti Education?</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <div className="flex items-start">
               <CheckCircle className="mr-4 text-purple-600 flex-shrink-0" />
               <div>
@@ -122,7 +122,7 @@ export default function TuttiEducationLanding() {
         <section id="contact" className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Excel in Your IB Journey?</h2>
           <p className="text-xl text-gray-600 mb-8">Sign up for a free consultation and discover how Tutti Education can support your academic success.</p>
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto flex gap-4">
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
             <Input
               type="email"
               placeholder="Enter your email"

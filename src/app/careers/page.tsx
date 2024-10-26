@@ -27,7 +27,7 @@ const CareerPage = () => {
 
         <section className="mb-16">
           <h2 className="text-3xl font-semibold mb-8 text-center">Why Choose Tutti Education?</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
               <Card className="text-center">
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold">Global Impact</CardTitle>

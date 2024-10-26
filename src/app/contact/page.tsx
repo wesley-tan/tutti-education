@@ -21,7 +21,7 @@ const ContactPage = () => {
         </section>
 
         <section className="mb-16">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
             <div>
               <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
               <p className="text-gray-600 mb-6">
